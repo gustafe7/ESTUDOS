@@ -47,7 +47,7 @@ Alguns exemplos de projetos presentes no repositório:
 
 Este repositório será atualizado constantemente conforme avanço nos estudos e aprendo novos conceitos de programação.
 
-```
+---
 
 ## 👨‍💻 Autor
 
