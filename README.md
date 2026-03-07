@@ -26,9 +26,9 @@ Atualmente estou estudando e utilizando:
 * 🌍 **GitHub**
 * 🖥 **VS Code**
 
-```
+---
 
-Cada pasta contém exercícios ou pequenos projetos focados em prática.
+## 📂 Cada pasta contém exercícios ou pequenos projetos focados em prática.
 
 ---
 
@@ -47,7 +47,7 @@ Alguns exemplos de projetos presentes no repositório:
 
 Este repositório será atualizado constantemente conforme avanço nos estudos e aprendo novos conceitos de programação.
 
----
+```
 
 ## 👨‍💻 Autor
 
