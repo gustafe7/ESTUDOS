@@ -1,50 +1,52 @@
 # 6 - ATIVIDADE: Seria possível criar um programa com base na lógica do jogo "papel, pedra e tesoura"?"​
 print("\n=== JOGO: PEDRA, PAPEL, TESOURA ===\n")
-
+# menu
 print("Escolha uma opção: ")
 print("1 - MULTIJOGADOR")
 print("2 - JOGADOR VS COMPUTADOR\n")
 opcao = input("Digite o número da opção desejada: ")
 
-if not opcao:
+if not opcao: # caso nenhum valor seja atribuido a "opcao"...
     print("Escolha uma opção válida, Por favor!")
 
-if opcao == "1":
-    JOGADOR1 = input("Insira seu nome: ")
+if opcao == "1": # caso seja igual a 1...
+    JOGADOR1 = input("Insira seu nome: ") # imputando o jogador 1...
     print("Nome aceito!\n")
-    JOGADOR2 = input("Insira seu nome: ")
+    JOGADOR2 = input("Insira seu nome: ") # imputando o jogador 2...
     print("Nome aceito!\n")
 
-    PLAY1 = input(f"({JOGADOR1}) Escolha entre: pedra, papel ou tesoura: ")
-    PLAY2 = input(f"({JOGADOR2}) Escolha entre: pedra, papel ou tesoura: ")
+    PLAY1 = input(f"({JOGADOR1}) Escolha entre: pedra, papel ou tesoura: ") # escolhas das opcoes...
+    PLAY2 = input(f"({JOGADOR2}) Escolha entre: pedra, papel ou tesoura: ") # escolhas das opcoes...
 
-    if PLAY1 == PLAY2:
+    if PLAY1 == PLAY2: # se as escolhas forem iguais...
         print("EMPATE!")
-    elif PLAY1 == "pedra" and PLAY2 == "tesoura" or PLAY1 == "tesoura" and PLAY2 == "papel" or PLAY1 == "papel" and PLAY2 == "pedra":
+    elif PLAY1 == "pedra" and PLAY2 == "tesoura" or PLAY1 == "tesoura" and PLAY2 == "papel" or PLAY1 == "papel" and PLAY2 == "pedra": 
+        # nessas condições o Jogador 1 vence...
         print(f"Jogador(a) {JOGADOR1} venceu!\n")
-    else:
+    else: # nessas condições o Jogador 2 vence...
         print(f"Jogador(a) {JOGADOR2} venceu!\n")
 
-if opcao == "2":
-    import random
+if opcao == "2": # caso seja igual a 2...
+    import random 
     
-    JOGADOR1 = input("\n""Insira o seu nome: ")
+    JOGADOR1 = input("\n""Insira o seu nome: ") # imputando jogador 1...
     print("Nome aceito!")
-    COMPUTADOR = input("\n""Insira um nome para o adversário: ")
+    COMPUTADOR = input("\n""Insira um nome para o adversário: ") # imputando o nome para o computador...
     print("Nome aceito!")
 
-    PLAY1 = input(f"\n({JOGADOR1}) Escolha entre: pedra, papel ou tesoura: ")
+    PLAY1 = input(f"\n({JOGADOR1}) Escolha entre: pedra, papel ou tesoura: ") # escolhas das opcoes...
 
-    if not PLAY1:
+    if not PLAY1: # caso nenhuma opção seja escolhida...
         print("Escolha uma das opções, Por favor!")
 
     opcoes = ["pedra","papel","tesoura"]
-    CPU = random.choice(opcoes)
+    CPU = random.choice(opcoes)  # escolhe uma das opcoes aleatoriamente dentro da lista...
     print(f"O(a) {COMPUTADOR} escolheu:", CPU)
         
-    if PLAY1 == CPU:
+    if PLAY1 == CPU: # caso as escolhas sejam iguais...
         print("EMPATE!")
     elif PLAY1 == "pedra" and CPU == "tesoura" or PLAY1 == "tesoura" and CPU == "papel" or PLAY1 == "papel" and CPU == "pedra":
+        # nessas condições o Jogador 1 vence...
         print(f"\nJogador(a) {JOGADOR1} Venceu!")
-    else:
+    else: # nessas condições o computador vence...
         print(f"\nO(a) {COMPUTADOR} venceu!")

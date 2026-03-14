@@ -1,11 +1,11 @@
 #Desmonstração do uso de while ...
 
 print("Digite o valor máximo desejado: ")
-NUMERO = int(input())
+NUMERO = int(input()) # imputando o numero...
 
-X = 0
+X = 0 # valor atribuido a X...
 print("Segue, os números desejados:")
-while X < NUMERO:
+while X < NUMERO: # enquanto o valor de X for menor que o numero imputado...
     print(X)
     X = X + 1
     

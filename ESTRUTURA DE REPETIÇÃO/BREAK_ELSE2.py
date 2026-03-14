@@ -1,9 +1,9 @@
 # Desmonsração do uso de estrutura repetitia...
-NUMERO = 1
-while NUMERO > 0:
+NUMERO = 6
+while NUMERO > 0: # enquanto o número for maior que 0...
     print("Digite um número negativo para sair:")
-    NUMERO = int(input())
-    continue
+    NUMERO = int(input()) # imputando o numero...
+    continue # continuará rodando até o usurário inserir a opção correta...
     print("Este texto não será exibido! mas...")
-else:
-    print("O número digitado foi: ", NUMERO)
+else: # exibe a mensagem com o número inserido
+    print("O número digitado foi:", NUMERO)

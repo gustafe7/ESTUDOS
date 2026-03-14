@@ -1,17 +1,19 @@
 # Cálculo da aposentadoria...
-IDADE = int(input("Qual é a idade: "))
-INSS = int(input("Quantos anos de contribuição: "))
-INSALUBRE = input("Em condições insalubres (S/N)? ")
 
-if INSALUBRE == "S":
-    if INSS >= 25:
+print("\n=== CALCULO APOSENTADORIA ===\n")
+#menu
+IDADE = int(input("Qual é a idade: ")) # imputando a idade...
+INSS = int(input("Quantos anos de contribuição: ")) # imputando os anos de contribuição...
+INSALUBRE = input("Em condições insalubres (S/N)? ") # imputando as condições de trabalho...
+
+if INSALUBRE == "S": # se a resposta for SIM...
+    if INSS >= 25: 
         print("Aposentadoria especial!")
-    else:
+    else: # caso não seja o sistema irá calcular o tempo restante...
         print(f"Faltam {25 - INSS} para se aposentar...")
-else:
-    if IDADE >= 65 and INSS >= 35:
+else: # aqui leva em consideração caso a condição de trabalho seja diferente da resposta "S"...
+    if IDADE >= 65 and INSS >= 35: # caso a idade e o tempo de contribuição forem maiores ou iguais a 65 e 35...
         print("Aposentadoria normal!")
-    elif IDADE < 65 and INSS < 35:
+    else: # caso a idade e o tempo de contribuição sejam menores a 65 e 35...
         print(f"(IDADE): Faltam {65 - IDADE} anos e (CONTRIBUIÇÃO): Faltam {35 - INSS} anos para se aposentar...")
-    else:
-        print("Falta atender os requisitos...")
+ 

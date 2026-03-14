@@ -8,9 +8,9 @@
 print('\n === CADASTRO DE TIME ===\n')
 
 print("Informe o seu time, Por favor: ")
-TIME = input()
+TIME = input() # imputando o time...
 print("Informe a posição na tabela de classifiação, Por favor: ")
-CLASSIFICACAO = input()
+CLASSIFICACAO = input() # imputando a classifiação...
 
 if not TIME or not CLASSIFICACAO: # se não conter valor em TIME e CLASSIFICACAO...
     print("Informe o time e a classificação, Por favor!")
@@ -24,5 +24,5 @@ if CLASSIFICACAO:
         print("Sul-Americana!")
     if CLASSIFICACAO >="13" and CLASSIFICACAO <="16": # maior ou igual a 13 e menor ou igual a 16...
         print("REBAIXADO!")
-else:
+else: # caso não seja nenhuma das posições aceitas...
     print("As posições aceitas são somente da 1 até 16.")

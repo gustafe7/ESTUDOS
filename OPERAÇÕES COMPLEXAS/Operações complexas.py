@@ -1,11 +1,11 @@
 #Demonstração de opercação complexa...
 X = 10; Y = 20; Z = 30
 
-VALOR = X * ( Y / 10 + Z / 10) - 25
+VALOR = X * ( Y / 10 + Z / 10) - 25 # o uso de () da prioridade a operação...
 print("O resultado da expressão #1 é: ", VALOR)
 
-VALOR = ((Y - X ) + (Z - X)) / 3
+VALOR = ((Y - X ) + (Z - X)) / 3 # utilizando 2 prioridades...
 print("O resultado da expressão #2 é: " , VALOR)
 
-VALOR = (X + (Y * 2 + (Z / 10))) - 18
+VALOR = (X + (Y * 2 + (Z / 10))) - 18 # utilizando 3 prioridades...
 print("O resultado da expressão #3 é: ", VALOR)

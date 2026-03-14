@@ -4,15 +4,15 @@
 # Se não, exibir "Eles estão misturados"!​
 
 print("Informe o primeiro número, Por favor!: ")
-X = float(input())
+X = float(input()) # imputando o X...
 print("Informe o segundo número, Por favor!:  ")
-Y = float(input())
+Y = float(input()) # imputando o Y...
 print("Informe o terceiro numero, Por favor!: ")
-Z = float(input())
+Z = float(input()) # imputando o Z...
 
-if X < Y < Z:
+if X < Y < Z: # caso X for menor que Y e menor que Z...
     print("Ordem Crescente!")
-elif X > Y > Z:
+elif X > Y > Z: # caso X for maior que Y e maior que Z...
     print("Ordem Decrescente!")
-else:
+else: # caso os números informados estejam embaralhados...
     print("Eles estão misturados!")

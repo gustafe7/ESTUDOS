@@ -8,41 +8,41 @@ servico_prestado = input("O serviço foi prestado? (sim/não): ")
 if servico_prestado == "sim":
 
     print("\n=== AVALIAÇÃO DE SERVIÇOS ===\n")
-
+    #menu
     print("1 - Péssimo")
     print("2 - Ruim")
     print("3 - Razoável")
     print("4 - Bom")
     print("5 - Ótimo\n")
 
-    nota = input("Digite a nota do serviço (1-5): ")
+    nota = input("Digite a nota do serviço (1-5): ") # imputando a nota...
 
-    if nota == "1":
+    if nota == "1": # caso a nota seja igual a 1...
         print("Avaliação: péssimo\n")
-        reclamacao = input("Por favor, descreva suas reclamações: \n")
+        reclamacao = input("Por favor, descreva suas reclamações: \n") # imputando reclamação mais detalhada...
         print("Agradecemos seu feedback.")
-    elif nota == "2":
+    elif nota == "2": # caso a nota seja igual a 2...
         print("Avaliação: ruim")
-        reclamacao = input("Por favor, descreva suas reclamações: \n")
+        reclamacao = input("Por favor, descreva suas reclamações: \n") # imputando reclamação mais detalhada...
         print("Agradecemos seu feedback.")
-    elif nota == "3":
+    elif nota == "3": # caso a nota seja igual a 3...
         print("Avaliação: razoável")
-        reclamacao = input("Por favor, descreva em que podemos melhorar: ")
+        reclamacao = input("Por favor, descreva em que podemos melhorar: ") # imputando reclamação mais detalhada...
         print("Agradecemos seu feedback.")
-    elif nota == "4":
+    elif nota == "4": # caso a nota seja igual a 4...
         print("Avaliação: bom")
-        reclamacao = input("Por favor, descreva em que podemos melhorar: ")
+        reclamacao = input("Por favor, descreva em que podemos melhorar: ") # imputando reclamação mais detalhada...
         print("Agradecemos seu feedback.")
-    elif nota == "5":
-        print("Avaliação: ótimo")
+    elif nota == "5": # caso a nota seja igual a 5...
+        print("Avaliação: ótimo") 
         print("Agradecemos seu feedback.")
     else:
-        print("Nota inválida. Por favor, digite um número entre 1 e 5.")
+        print("Nota inválida. Por favor, digite um número entre 1 e 5.") # caso a nota inserida não corresponder com as solicitadas.
 
-elif servico_prestado == "não":
+elif servico_prestado == "não": # caso a resposta seja igual a não...
     print("Nota atribuída: 0")
 
-    reclamacao = input("Por favor, descreva suas reclamações: ")
+    reclamacao = input("Por favor, descreva suas reclamações: ") # imputando reclamação mais detalhada...
     print("Reclamação registrada. Agradecemos seu feedback.")
-else:
+else: # caso a resposta seja diferente de "sim" e "não"...
     print("Resposta inválida. Por favor, digite 'sim' ou 'não'.")

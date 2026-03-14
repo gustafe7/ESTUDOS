@@ -2,21 +2,21 @@
 
 print("O que voçê vai fazer amanhã de manhã?")
 print("dormir / estudar / planejar")
-MANHA = input()
+MANHA = input() # imputando opções...
 
 print("O que você vai fazer amanhã de tarde?")
 print("jogar / treinar / trabalhar")
-TARDE = input()
+TARDE = input() # imputando opções...
 
-if not MANHA or not TARDE:
+if not MANHA or not TARDE: # caso não tenha nenhuma escolha...
     print("Você precisa dizer o que vai fazer!")
 else:
-   if MANHA == "dormir" or TARDE == "jogar":
+   if MANHA == "dormir" or TARDE == "jogar": # caso tenham essas combinações...
         print("Você está desperdiçando o seu dia!")
-   elif MANHA == "estudar" or TARDE == "treinar":
+   elif MANHA == "estudar" or TARDE == "treinar": # caso tenham essas combinações...
         print("Que bom! Você irá se aperfeiçoar.")
-   elif MANHA == "planejar" and TARDE == "trabalhar":
+   elif MANHA == "planejar" and TARDE == "trabalhar": # caso tenham essas combinações...
         print("Para trabalhar melhor, devo planejar")
-   else:
+   else: # caso as opções sejam diferentes...
         print("Não combinamos estas ações...")
 print("Tenha um bom dia!")

@@ -5,13 +5,13 @@
 # Para qualquer outra resposta, exibir "Teimoso!"."​
 
 print("Informe a função que deseja exercer: ")
-FUNCAO = input()
+FUNCAO = input() # imputando a função...
 
-if FUNCAO == "goleiro" or FUNCAO == "zagueiro" or FUNCAO == "lateral":
+if FUNCAO == "goleiro" or FUNCAO == "zagueiro" or FUNCAO == "lateral": # caso essas funções forem inseridas...
     print("Defesa!")
-elif FUNCAO == "ala" or FUNCAO == "volante" or FUNCAO == "meia":
+elif FUNCAO == "ala" or FUNCAO == "volante" or FUNCAO == "meia": # caso essas funções forem inseridas...
     print("Meio-Campo!")
-elif FUNCAO == "ponta" or FUNCAO == "atacante" or FUNCAO == "centroavante":
+elif FUNCAO == "ponta" or FUNCAO == "atacante" or FUNCAO == "centroavante": # caso essas funções forem inseridas...
     print("Ataque!")
-else:
+else: # caso nenhuma das opções seja inserida...
     print("Teimoso!")

@@ -5,18 +5,17 @@
 print("\n=== ÁREA DO TRIANGULO===\n")
 
 print("Informe o lado 'A' do triangulo, Por favor!: ")
-A = input()
+A = input() # imputando o lado A...
 print("Informe o lado 'B' DO triangulo, Por favor!: ")
-B = input()
+B = input() # imputando o lado B...
 print("Informe o lado 'C' do triangulo, Por favor!: ")
-C = input()
+C = input() # imputando o lado C...
 
-if A == B == C:
+if A == B == C: # caso todos os lados sejam iguais...
     print("EQUILÁTERO!")
-elif A == B or A == C or B == C:
+elif A == B or A == C or B == C: # caso apenas se 2 lados forem iguais...
     print("ISÓSCELES!")
-else:
+else: # caso nenhum lado seja igual...
     print("ESCALENO!")
 
-print("Os valores informados não formam um triangulo!")
     

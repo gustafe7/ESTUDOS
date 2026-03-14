@@ -3,6 +3,9 @@
 # e em caso de notas baixas, deverá ser feita dado ao usuário, a possibilidade de descrever o porquê do conteúdo em questão foi avaliado de forma negativa. 
 # Por fim, caso o usuário digite qualquer outro valor fora da escala, deverá ser exibido um alerta.​
 
+
+print("\n=== AVALIAÇÃO ===\n")
+# Menu
 print("1. Péssimo")
 print("2. Ruim")
 print("3. Razoável")
@@ -10,24 +13,24 @@ print("4. Bom")
 print("5. Ótimo")
 
 print("Digite um Filme ou Série: ")
-MOVIE = input()
+MOVIE = input() # imputando nome do filme ou série...
 
 print("Digite uma nota para avaliação: ")
-NOTA = float(input())
+NOTA = float(input()) # imputando nota...
 
 match NOTA: 
-    case 1:
-        print(input("Informe sua sua avaliação:"))
+    case 1: # caso a nota seja 1 o sistema pedirá uma avaliação mais detalhada...
+        print(input("Informe sua sua avaliação:")) # imputando nota 1...
         print("Obrigado pela sua avaliação!")
-    case 2:
-        print(input("Informe a sua avalição: "))
+    case 2:# caso a nota seja 2 o sistema pedirá uma avaliação mais detalhada...
+        print(input("Informe a sua avalição: ")) # imputando nota 2...
         print("Obrigado pela sua avaliação!")
-    case 3:
-        print(input("Informe sua avaliação: "))
+    case 3:# caso a nota seja 3 o sistema pedirá uma avaliação mais detalhada...
+        print(input("Informe sua avaliação: ")) # imputando nota 3...
         print("Obrigado pela sua avaliação!")
-    case 4:
+    case 4: # caso a nota seja 4...
         print("Obrigado pela sua avaliação!")
-    case 5:
+    case 5: # caso a nota seja 5...
         print("Obrigado pela sua avaliação!")
-    case _:
-        print("Nota Inválida!")
+    case _: # caso não seja nenhuma das opcoes do menu...
+        print("Nota inválida!")
