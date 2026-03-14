@@ -1,9 +1,9 @@
 #4- ATIVIDADE: Construa um programa para que o usuário possa digitar o ano que nasceu 
 # e o programa irá escrever, na tela, quantos anos ele completaria se ele estivesse em 2040.​
 
-NASCIMENTO = int(input("Digite o ano do seu nascimento: "))
+NASCIMENTO = int(input("Digite o ano do seu nascimento: ")) # imputando ano de nascimento...
 
-X = int(input("Digite o ano desejado: "))
+X = int(input("Digite o ano desejado: ")) # imputando o ano desejado...
 
-CALCULO = X - NASCIMENTO
+CALCULO = X - NASCIMENTO # X - NASCIMENTO atribui valor ao CALCULO...
 print("A sua idade será de: ", CALCULO)

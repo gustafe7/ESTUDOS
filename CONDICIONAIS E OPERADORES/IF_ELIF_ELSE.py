@@ -1,13 +1,13 @@
 # Demonstração de IF/ELSE...
 print("Digite sua idade: ")
-IDADE = int(input())
+IDADE = int(input()) # imputando idade...
 
-#SE..
-if IDADE < 18:
+
+if IDADE < 18: # se for menor que 18...
  print("Você não é maior de idade")
  print("Não poderá realizar operações bancárias!")
 #SE NÃO..
-elif IDADE <= 65:
+elif IDADE <= 65: 
   print("Public")
   print("Poderemos oferecer suporte técnico...")
 #ENTÃO..

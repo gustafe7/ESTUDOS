@@ -3,8 +3,8 @@
 print("\n ==== TABUADA ===\n")
 
 print("Digite um número desejado: ")
-NUMERO = int(input())
+NUMERO = int(input()) # imputando um número desejado...
 
-for X in range (0, 10):
-    print(f"{X} x {NUMERO} =", X * NUMERO)
+for X in range (0, 10): #DE 0 ATÉ 10...
+    print(f"{X} x {NUMERO} =", X * NUMERO) # impressão do resultado das expressões...
    

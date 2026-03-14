@@ -1,16 +1,16 @@
 # Demonstração de estrutura repetitiva...
 CONTADOR = 0; SENHA = ""
-while SENHA != "S3nh4":
+while SENHA != "S3nh4": # SE a senha for DIFERENTE DE S3nh4 a mensagem irá se repetir até acertar...
     print("Digite a senha: ")
     SENHA = input()
 
-    if SENHA == "S3nh4":
+    if SENHA == "S3nh4": # se a senha for IGUAL a S3nh4...
         print("Senha correta!")
         break
-    else:
+    else: 
         print("Senha errada...")
 
-    CONTADOR += 1
-    if CONTADOR == 3:
+    CONTADOR += 1 # contador adiciona as tentativas...
+    if CONTADOR == 3: # errando 3 vezes exibe a seguinte mensagem...
         print("3 tentatias excedidas!")
-        break
+        break # para o programa...

@@ -4,12 +4,12 @@
 # Somente após o usuário responder a pergunta corretamente, o programa irá parabenizá-lo.​
 
 TIME = ""
-while TIME != "Flamengo":
-    print("Qual o melhor time do Brasil?")
-    TIME = input()
-    continue
+while TIME != "Flamengo": #se o time for DIFERENTE do FLAMENGO...
+    print("Qual o melhor time do Brasil?") 
+    TIME = input() # imputando o time que o sistema deseja...
+    continue #ira continuar insistindo até o usuário digitar FLAMENGO...
 else: 
-    print("O melhor time do Brasil é o", TIME)
+    print("O melhor time do Brasil é o", TIME) 
 
 
     

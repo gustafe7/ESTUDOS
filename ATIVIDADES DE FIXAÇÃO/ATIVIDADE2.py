@@ -1,8 +1,8 @@
 #2- ATIVIDADE: Construa um programa para que o usuário digite o valor de um produto 
 # e a quantidade de prestações que ele gostaria de pagar e com base nela, o valor de cada prestação.​
 
-VALOR = int(input("Digite aqui o valor do Produto: "))
-PARCELAS = int(input("Digite aqui o numero de parcelas: "))
+VALOR = int(input("Digite aqui o valor do Produto: ")) # imputando valor...
+PARCELAS = int(input("Digite aqui o numero de parcelas: ")) # imputando parcelas...
 
-PRESTACAO = VALOR / PARCELAS
+PRESTACAO = VALOR / PARCELAS # VALOR / PARCELAS atribui valor a PRESTAÇÃO...
 print("O valor das parcelas é de: ", PRESTACAO)

@@ -3,17 +3,17 @@
 # Por fim, se o resultado do cálculo entregar um valor entre 18 e 25, informar ao usuário que "O seu peso está OK".​
 
 print("Informe sua Altura: ")
-ALTURA = float(input())
+ALTURA = float(input()) # imputando altura...
 
 print("Informe o seu Peso: ")
-PESO = float(input())
+PESO = float(input()) # imputando peso...
 
-IMC = PESO / (ALTURA * ALTURA)
+IMC = PESO / (ALTURA * ALTURA) # fórmula do cálculo do IMC...
 print("Seu IMC é: ", IMC)
 
-if IMC > 25:
+if IMC > 25: # IMC maior que 25...
     print("ACIMA DO PESO IDEAL.")
-elif IMC < 18:
+elif IMC < 18: # IMC menor que 18...
     print("ABAIXO DO PESO IDEAL.")
-elif 18 <= IMC <= 25:
+elif 18 <= IMC <= 25: # IMC entre 18 e 25...
     print("O seu peso está OK")
