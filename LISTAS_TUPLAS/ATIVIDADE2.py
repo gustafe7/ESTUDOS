@@ -1,34 +1,88 @@
-JOGADORES = ["1.(1) Diego Alves - Goleiro",
-             "2.(3) Rodrigo Caio - Zagueiro",
-             "3.(24) Pablo Mari - Zagueiro",
-             "4.(18) Rafinha - Lateral",
-             "5.(21) Filipe Luís - Lateral",
-             "6.(5) Arão - Volante",
-             "7.(15) Gerson - Volante",
-             "8.(14) Arrascaeta - Meia",
-             "9.(7) Everton Ribeiro - Meia",
-             "10.(9) Gabigol - Atacante",
-             "11.(27) Bruno Henrique - Atacante",]
+#2 - ATIVIDADE: Construa um programa que receba a escalação dos 11 jogadores titulares que irão iniciar uma partida, 
+# registrando seus nomes e o número da camisa, além de imprimir a lista após a sua digitação. 
+# Durante o intervalo do jogo, ofereça ao técnico a opção de realizar a substituição de 3 jogadores, exibindo a lista atualizada com os respectivos nomes e números.​
 
-RESERVAS = ["12.(2) Rodinei - Lateral",
-            "13.(4) Rodolfo - Zagueiro",
-            "14.(6) Renê - Lateral",
-            "15.(10) Diego - Meia",
-            "16.(11) Vitinho - Atacante",
-            "17.(12) Cesar - Goleiro",
-            "18.(13) V. Souza - Volante",
-            "19.(19) Reinier - Atacante",
-            "20.(20) Lincoln - Atacante",
-            "21.(25) Piris - Zagueiro",
-            "22.(26) Thuler - Zagueiro",
-            "23.(29) Berrío - Atacante",]
+# Titulares
+jogadores = ["Diego Alves",
+             "Rodrigo Caio",
+             "Pablo Mari",
+             "Rafinha",
+             "Filipe Luís",
+             "Arão",
+             "Gerson",
+             "Arrascaeta",
+             "Everton Ribeiro",
+             "Gabigol",
+             "Bruno Henrique"]
 
-print("Eis, os jogadores do Flamengo para a temporada 2019:")
-for X in JOGADORES:
-    print(X)
+# Reservas
+reservas = ["Rodinei",
+            "Rodolfo",
+            "Renê",
+            "Diego",
+            "Vitinho",
+            "Cesar",
+            "V. Souza",
+            "Reinier",
+            "Lincoln",
+            "Piris",
+            "Thuler",
+            "Berrío"]
 
-print("E os reservas são:")
-for X in RESERVAS:
-    print(X)
+# Números dos titulares
+numeros = [1, 3, 4, 13, 16, 5, 8, 14, 7, 9, 27]
 
-print("Você tem direito a 3 substituições. Quem você quer colocar?")
+# Mostrar escalação inicial
+print("=== TIME TITULAR ===")
+for i in range(len(jogadores)):
+    print(f"{i} - {numeros[i]} - {jogadores[i]}")
+
+# Substituições
+print("\n=== INTERVALO ===")
+opcao = input("Deseja fazer substituições? (s/n): ").lower()
+
+if opcao == 's':
+    for i in range(3):
+        print(f"\nSubstituição {i+1}")
+
+        # Mostrar titulares
+        print("\nTitulares:")
+        for j in range(len(jogadores)):
+            print(f"{j} - {numeros[j]} - {jogadores[j]}")
+
+        # Validar jogador que sai
+        while True:
+            try:
+                sair = int(input("Digite o número do jogador que vai sair: "))
+                if 0 <= sair < len(jogadores):
+                    break
+                else:
+                    print("Número inválido! Tente novamente.")
+            except:
+                print("Digite um número válido!")
+
+        # Mostrar reservas
+        print("\nReservas:")
+        for r in range(len(reservas)):
+            print(f"{r} - {reservas[r]}")
+
+        # Validar jogador que entra
+        while True:
+            try:
+                entrar = int(input("Digite o número do reserva que vai entrar: "))
+                if 0 <= entrar < len(reservas):
+                    break
+                else:
+                    print("Número inválido! Tente novamente.")
+            except:
+                print("Digite um número válido!")
+
+        # Fazer substituição
+        jogadores[sair] = reservas[entrar]
+        reservas.pop(entrar)
+
+# Mostrar time final
+print("\n=== TIME ATUALIZADO ===")
+for i in range(len(jogadores)):
+    print(f"{numeros[i]} - {jogadores[i]}")
+
