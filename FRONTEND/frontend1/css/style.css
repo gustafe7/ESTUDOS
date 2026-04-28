@@ -1,0 +1,11 @@
+/*
+FRONTEND\css\style.css
+Folha de estilo globais
+*/
+
+/* Reset no CSS pra se igualar na maioria dos navegadores */
+
+*{
+    outline: none;
+    box-sizing: border-box;
+}
