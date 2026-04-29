@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shifto</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            outline: none;
+        }
+
+        html,
+        body {
+            padding: 0;
+            margin: 0;
+            height: 100%;
+            font-family: sans-serif;
+            font-size: 16px;
+        }
+
+        body {
+            background-color: blueviolet;
+        }
+
+        #wrap {
+            background-color: pink;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: .5rem;
+        }
+
+        /* header filho direto de #wrap */
+        #wrap>header {
+            background-color: grey;
+            color: white;
+            padding: 2rem;
+        }
+
+        #wrap>nav {
+            background-color: yellow;
+        }
+
+        #wrap>main {
+            background-color: orange;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            gap: .5rem;
+            flex-grow: 1;
+        }
+
+        #wrap>main>article {
+            background-color: green;
+            padding: 1rem;
+            flex-grow: 1;
+        }
+
+        #wrap>main>aside {
+            background-color: blue;
+            padding: 1rem;
+        }
+
+        #wrap>footer {
+            background-color: red;
+        }
+
+ /* Media Queries */
+
+        @media screen and (min-width: 768px) {
+            #wrap>main {
+                flex-direction: row;
+            }
+
+            #wrap>main>aside {
+                /* flex: 0 0 220px; */
+                flex-shrink: 0;
+                flex-basis: 220px;
+            }
+        }
+    </style>
+</head>
+
+
+<body>
+
+    <div id="wrap">
+
+        <header>Cabeçalho</header>
+
+        <nav>
+            <a href="#Início"><span>Início</span></a>
+            <a href="#Lista"><span>Lista</span></a>
+            <a href="#Contato"><span>Contato</span></a>
+            <a href="#Sobre"><span>Sobre</span></a>
+        </nav>
+
+        <main>
+
+            <article>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore, similique. Dicta illum natus
+                molestias sapiente sequi voluptatibus ab, excepturi numquam quos ex eum delectus doloribus nam iure
+                aliquam architecto laborum!                
+
+            </article>
+
+            <aside>
+                <header>Conteúdo Auxiliar</header>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti harum maxime labore repellat id
+                ratione. Est magnam porro, tenetur molestias illo ipsam temporibus sunt doloribus rem perferendis
+                sapiente assumenda explicabo.
+            </aside>
+
+        </main>
+
+        <footer>Rodapé</footer>
+
+    </div>
+
+</body>
+
+</html>
