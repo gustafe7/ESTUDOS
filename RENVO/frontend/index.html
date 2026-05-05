@@ -7,7 +7,7 @@
     <!-- Pode importar o CSS do Font Awesome assim: 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
     -->
-    <title>renvo</title>
+    <title>Renvo</title>
     <style>
         /* Importa o CSS do font Awesome */
         @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css');
@@ -38,24 +38,7 @@
             gap: .5rem;
         }
 
-        #wrap>nav {
-            background-color: orange;
-            display: flex;
-            align-items: center;
-            justify-content: space-around;
-        }
 
-        #wrap>nav a {
-            text-decoration: none;
-            color: #222;
-            padding: 1rem;
-            transition: .2s;
-        }
-
-        #wrap>nav a:hover {
-            background-color: #222;
-            color: orange;
-        }
 
         #wrap>main {
             background-color: orange;
@@ -136,7 +119,6 @@
             text-align: center;
             display: flex;
             flex-direction: column;
-            align-items: center;
         }
 
         #wrap>header .title h1 {
@@ -159,6 +141,41 @@
             letter-spacing: .25rem;
         }
 
+        /* Menu principal */
+
+        #wrap>nav {
+            background-color: orange;
+            display: flex;
+            align-items: center;
+            justify-content: end;
+        }
+
+        #wrap>nav a {
+            text-decoration: none;
+            color: #222;
+            padding: 1rem;
+            transition: .2s;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            gap: .45rem;
+        }
+
+
+        #wrap>nav a i {
+            font-size: 2rem;
+        }
+
+        #wrap>nav a:hover {
+            background-color: #222;
+            color: orange;
+        }
+
+        #wrap>nav a:first-child {
+            margin-right: auto;
+        }
+
+
         /* Media Queries - Telas maiores 768px */
 
         @media screen and (min-width: 768px) {
@@ -180,34 +197,16 @@
                 flex-direction: row;
                 justify-content: space-between;
             }
-            
-            /* Menu principal */
 
-        #wrap>nav {
-            background-color: orange;
-            display: flex;
-            align-items: center;
-            justify-content: end;
-        }
+            #wrap>nav a {
+                flex-direction: row;
+                gap: .25rem;
+            }
 
-        #wrap>nav a {
-            text-decoration: none;
-            color: #222;
-            padding: 1rem;
-            transition: .2s;
-            display: flex;
-            align-items: center;
-            flex-direction: column;
-        }
+            #wrap>nav a i {
+                font-size: 1.25rem;
+            }
 
-        #wrap>nav a:hover {
-            background-color: #222;
-            color: orange;
-        }
-
-        #wrap>nav a:first-child {
-            margin-right: auto;
-        }
         }
     </style>
 </head>
@@ -243,6 +242,7 @@
             <a href="#Lista"><i class="fa-solid fa-clipboard-list"></i><span>Lista</span></a>
             <a href="#Contato"><i class="fa-solid fa-comments"></i><span>Contato</span></a>
             <a href="#Sobre"><i class="fa-solid fa-circle-info"></i><span>Sobre</span></a>
+            <!-- <a href="#Login"><i class="fa-solid fa-right-to-bracket fa-fw"></i><span>Login</span></a> -->
         </nav>
 
 
@@ -263,7 +263,11 @@
 
         </main>
 
-        <footer>Rodapé</footer>
+        <footer>
+            <a href="#Início"><i class="fa-solid fa-house fa-fw"></i></a>
+            <div>&copy; 2026 Gustavo Gomes</div>
+            <a href="#top"><i class="fa-solid fa-circle-up fa-fw"></i></a>
+        </footer>
 
     </div>
 
