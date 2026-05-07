@@ -1,0 +1,246 @@
+/* Importa o CSS do font Awesome */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css');
+
+/***************/
+/* Reset geral */
+/***************/
+
+* {
+    box-sizing: border-box;
+    outline: none;
+}
+
+html,
+body {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    font-family: sans-serif;
+    font-size: 16px;
+}
+
+body {
+    background-color: black;
+}
+
+#wrap {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    max-width: 1080px;
+    margin: auto;
+    padding: 0 .5rem;
+}
+
+/**********************/
+/* Conteúdo principal */
+/**********************/
+
+/* Elemento pai - flex */
+
+#wrap>main {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    flex-grow: 1;
+}
+
+/* Flexbox com conteúdo principal */
+
+#wrap>main>article {
+    background-color: #fff;
+    padding: 1rem;
+    flex-grow: 1;
+    color: black;
+    border-radius: .4rem;
+    border: 1px solid white;
+}
+
+/* Flexbox com conteúdo complementar opcional */
+
+#wrap>main>aside {
+    background-color: rgb(255, 239, 209);
+    padding: 1rem;
+    color: black;
+    border-radius: .4rem;
+    border: 1px solid white;
+}
+
+/* Cabeçalho da página */
+
+#wrap>header {
+    background-color: #333;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #fff;
+    border-top: none;
+    border-radius: 0 0 .5rem .5rem;
+}
+
+/* Formata um ícone como logotipo */
+
+.header-logo {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+
+/* Formulário de pesquisa */
+
+.header-search {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+}
+
+.header-search input,
+.header-search button {
+    /* Herda a fonte e o tamanho da fonte do body */
+    font-family: inherit;
+    font-size: inherit;
+    border: none;
+    padding: .5rem 1rem;
+}
+
+.header-search input {
+    flex-grow: 1;
+    border-radius: .4rem 0 0 .4rem;
+}
+
+.header-search button {
+    border-radius: 0 .4rem .4rem 0;
+    padding: .5rem;
+    background-color: rgb(231, 231, 231);
+}
+
+#wrap>header a {
+    text-decoration: none;
+}
+
+#wrap>header .logo {
+    font-size: 4rem;
+    color: orange;
+}
+
+#wrap>header .title {
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+#wrap>header .title h1 {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#wrap>header .title i {
+    font-size: small;
+    color: rgb(30, 156, 6);
+}
+
+#wrap>header .title span {
+    color: rgb(30, 156, 6);
+}
+
+#wrap>header .title small {
+    font-family: monospace;
+    letter-spacing: .25rem;
+    text-align: center;
+}
+
+/* Menu principal */
+
+#wrap>nav {
+    background-color:rgb(30, 156, 6);
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    border-radius: .4rem;
+    border: 1px solid white;
+}
+
+#wrap>nav a {
+    text-decoration: none;
+    color: #222;
+    padding: 1rem;
+    transition: .2s;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: .45rem;
+}
+
+#wrap>nav a i {
+    font-size: 2rem;
+}
+
+#wrap>nav a:hover {
+    background-color: #222;
+    color: rgb(30, 156, 6);
+}
+
+#wrap>nav a:first-child {
+    margin-right: auto;
+}
+
+/* Rodapé */
+
+#wrap>footer {
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid white;
+    border-bottom: none;
+    border-radius: .4rem .4rem 0 0;
+}
+
+#wrap>footer i {
+    font-size: 2rem;
+    margin: .5rem;
+}
+
+#wrap>footer a {
+    color: #fff;
+}
+
+#wrap>footer a:hover {
+    color: #ffa500;
+}
+
+/* Media Queries - Telas maiores 768px */
+
+@media screen and (min-width: 768px) {
+    #wrap>main {
+        flex-direction: row;
+    }
+
+    #wrap>main>aside {
+        flex-shrink: 0;
+        flex-basis: 220px;
+    }
+}
+
+/* Media Queries - Telas maiores 575px */
+@media screen and (min-width: 575px) {
+
+    #wrap>header {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    #wrap>nav a {
+        flex-direction: row;
+        gap: .25rem;
+    }
+
+    #wrap>nav a i {
+        font-size: 1.25rem;
+    }
+}

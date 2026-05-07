@@ -1,0 +1,115 @@
+/*
+FRONTEND\css\style.css
+Folha de estilo globais
+*/
+
+/************************************************************/
+/* Reset no CSS para se igualar ena maioria dos navegadores */
+/************************************************************/
+
+* {
+    outline: none;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    /* Fonte padrão */
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+    /* Cria a unidade de medida "rem" 1rem = 16px */
+    font-size: 16px;
+
+    /* Alguns ajustes visuais parapermitir efeitos */
+    position: relative;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-color: rgb(229, 202, 255);
+}
+
+
+/* Reset dos links */
+
+a {
+    color: steelblue;
+    text-decoration: none;
+}
+
+/* Quando passar ponteiro do mouse sobre */
+a:hover {
+    color: blue;
+}
+
+/*********************/
+/* Elemento div#wrap */
+/*********************/
+
+#wrap {
+    /* Centraliza este elemento em relação ao elemento pai */
+    position: relative;
+    margin: auto;
+    background-color: beige;
+    width: 100%;
+    max-width: 1080px;
+    height: 100%;
+}
+
+/**********************/
+/* Cabeçalho (header) */
+/**********************/
+
+header {
+    margin: .5rem;
+    background-color: black;
+    display: flex;
+    align-items: center;
+}
+
+header img {
+    display: block;
+    height: 4rem;
+    margin-right: 1rem;
+}
+
+header h1 {
+    margin: 0;
+    color: rgb(255, 255, 197);
+    -webkit-text-stroke: .5px orange;
+}
+
+/************************/
+/* Menu principal (nav) */
+/************************/
+
+nav {
+    margin: .5rem;
+    background-color: black;
+    display: flex;
+    gap: .5rem;
+    justify-content: end;
+}
+
+nav a {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: .25rem;
+}
+
+nav a:hover {
+    background-color: orange;
+    transition: .2s;
+    color: white;
+}
+
+nav i {
+    font-size: 2rem;
+    margin-bottom: .25rem;
+}
+
+/* Seleciona somente o primeiro elemento filho */
+nav a:first-child {
+    margin-right: auto;
+}
